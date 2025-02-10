@@ -7,4 +7,13 @@ edition = "2021"
 actix-web = "4.3.1"
 shuttle-actix-web = "0.52.0"
 shuttle-runtime = "0.52.0"
+shuttle-shared-db = {version = "0.52.0", features = ["postgres", "sqlx"]}
+sqlx = {version = "0.8.3", default-features = false, features = [
+    "tls-native-tls",
+    "macros",
+    "postgres",
+    "uuid",
+    "chrono",
+    "json",
+]}
 tokio = "1.26.0"
