@@ -271,6 +271,7 @@ version = "0.1.0"
 dependencies = [
  "actix-rt",
  "actix-web",
+ "shared",
  "sqlx",
  "tracing",
 ]
@@ -2348,6 +2349,10 @@ dependencies = [
 [[package]]
 name = "shared"
 version = "0.1.0"
+dependencies = [
+ "chrono",
+ "uuid",
+]
 
 [[package]]
 name = "shlex"
@@ -3269,6 +3274,12 @@ name = "uuid"
 version = "1.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ced87ca4be083373936a67f8de945faa23b6b42384bd5b64434850802c6dccd0"
+dependencies = [
+ "getrandom 0.3.1",
+ "js-sys",
+ "serde",
+ "wasm-bindgen",
+]
 
 [[package]]
 name = "valuable"
