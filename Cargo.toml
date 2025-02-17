@@ -4,5 +4,5 @@ members = [
     "api/shuttle",
     "front",
     "shared"
-, "front"]
+]
 resolver = "2"
