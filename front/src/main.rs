@@ -1,3 +1,6 @@
+mod components;
+use components::{Footer, Header};
+
 use dioxus::prelude::*;
 
 fn main() {
@@ -12,15 +15,13 @@ fn App() -> Element {
     rsx! {
         document::Link { rel: "stylesheet", href: MAIN_CSS } 
         document::Link { rel: "stylesheet", href: TAILWIND_CSS }
-        Hero{}
-    }
-}
-
-#[component]
-pub fn Hero() -> Element {
-    rsx! {
-        div {
-            "Hello, Vick"
-        }
+        main { 
+            class: "relative z-0 bg-blue-100 w-screen h-auto min-h-screen flex flex-col justify-start items-stretch",
+            Header{},
+            section { 
+                class:  "md:container md:mx-auto md:py-8 flex-1",
+             }
+            Footer{}
+         }
     }
 }
