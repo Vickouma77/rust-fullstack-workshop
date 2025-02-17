@@ -77,6 +77,15 @@
 .object-contain {
   object-fit: contain;
 }
+.transition-colors {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
+}
+.duration-300 {
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -101,4 +110,8 @@
   syntax: "*";
   inherits: false;
   initial-value: skewY(0);
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
 }
