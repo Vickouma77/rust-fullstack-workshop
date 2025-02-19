@@ -8,7 +8,6 @@ edition = "2021"
 
 [dependencies]
 dioxus = { version = "0.6.0", features = ["fullstack"] }
-shared = { path = "../shared" }
 
 [features]
 default = ["web"]

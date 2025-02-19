@@ -1,5 +1,5 @@
 mod components;
-use components::{Footer, Header};
+use components::{Footer, Header, Button};
 
 use dioxus::prelude::*;
 
@@ -20,6 +20,13 @@ fn App() -> Element {
             Header{},
             section { 
                 class:  "md:container md:mx-auto md:py-8 flex-1",
+                div {  
+                    class: "flex justify-center items-center",
+                    
+                    Button{ 
+                        text: "Click me", onclick: move |event| println!("Clicked! {event:?}") 
+                    }
+                }
              }
             Footer{}
          }

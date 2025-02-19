@@ -1,18 +1,18 @@
 use dioxus::prelude::*;
-use crate::models::ButtonType;
+
+#[derive(PartialEq, Clone, Props)]
+pub struct ButtonProps {
+    pub text: String,
+    onclick: EventHandler<MouseEvent>,
+}
 
 #[component]
-pub fn Button(button_type: ButtonType, onclick: EventHandler<MouseEvent>) -> Element {
-    rsx!{
-        button {
-            class: format!("text-white px-4 py-2 rounded-md transition-colors duration-300 ease-in-out {}",
-                button_type),
-            onclick: move |event| {
-                onclick.emit(event);
-            },
-            children: {
-                "Click me"
-            }
-        }
-    } 
+pub fn Button(props: ButtonProps) -> Element {
+    rsx! {
+        button { 
+            class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+            onclick: props.onclick,
+            {props.text}
+         }
+    }
 }
