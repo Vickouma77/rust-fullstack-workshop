@@ -68,6 +68,9 @@
 .justify-start {
   justify-content: flex-start;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .bg-transparent {
   background-color: transparent;
 }
