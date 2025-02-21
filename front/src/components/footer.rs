@@ -9,7 +9,7 @@ pub fn Footer() -> Element {
             class: "flex justify-center items-center bg-gray-900 p-4",
 
             a {
-                class: "w-16 h-16 md:w-20 md:h-20",
+                class: "w-4 h-4 md:w-16 md:h-16",
                 href: "",
                 target: "_blank",
                 img {
@@ -25,7 +25,7 @@ pub fn Footer() -> Element {
                 view_box: "0 0 24 24",
                 stroke_width: "1.5",
                 stroke: "currentColor",
-                class: "w-6 h-6 mx-4 text-white",
+                class: "w-1 h-1 mx-1 text-white",
                 path {
                     stroke_linecap: "round",
                     stroke_linejoin: "round",
@@ -34,7 +34,7 @@ pub fn Footer() -> Element {
             }
 
             a {
-                class: "w-16 h-16 md:w-20 md:h-20",
+                class: "w-4 h-4 md:w-4 md:h-4",
                 href: "",
                 target: "_blank",
                 img {

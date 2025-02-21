@@ -18,13 +18,23 @@ fn App() -> Element {
         main { 
             class: "relative z-0 bg-blue-100 w-screen h-auto min-h-screen flex flex-col justify-start items-stretch",
             Header{},
+
             section { 
                 class:  "md:container md:mx-auto md:py-8 flex-1",
                 div {  
                     class: "flex justify-center items-center",
+
+                    div { 
+                        class: "flex flex-col justify-center items-center",
+                        h1 { class: "text-4xl font-bold text-gray-800", "Welcome to Rusty Films" },
+                     }
                 }
              }
-            Footer{}
+
+            div { 
+                class: "flex justify-center items-center",
+                Footer{},
+             }
          }
     }
 }
