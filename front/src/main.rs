@@ -1,4 +1,6 @@
 mod components;
+mod models;
+
 use components::{Footer, Header};
 
 use dioxus::prelude::*;

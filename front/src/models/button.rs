@@ -1,5 +1,6 @@
 use std::fmt;
 
+#[derive(Clone, PartialEq)]
 pub enum ButtonType {
     Primary,
     Secondary,
