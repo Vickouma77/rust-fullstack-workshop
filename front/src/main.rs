@@ -1,8 +1,8 @@
 mod components;
 mod models;
 
-use components::{Footer, Header};
-
+use components::{Footer, Header, FilmCard, FilmModal};
+use models::FilmModalVisibility;
 use dioxus::prelude::*;
 
 fn main() {
